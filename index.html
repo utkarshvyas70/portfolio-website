@@ -5,7 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Utkarsh- Developer Portfolio</title>
     <style>
-        
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    /* <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap" rel="stylesheet"> */
+}
+body{
+    background-color: #3f9b6e;
+    color: aliceblue;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color:#266f4c;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: grey;
+    font-size: 1.3rem;
+}
+.left{
+    font-size: 1.5rem;
+}
+.firstsec{
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0;
+}
+.firstsec div{
+    width: 30%;
+}
+.leftsec{
+    font-size: 3rem;
+    margin: 30px 0;
+}
+.rightsec img{
+    width: 80%;
+    
+}
+.purple{
+    color: black;
+}
+#element{
+    color: black;
+}
     </style>
 </head>
 <body>
@@ -26,12 +85,23 @@
         <section class="firstsec">
             <div class="leftsec">
                 Hi, My name is <span class="purple">Utkarsh Vyas</span>
-                <div>and I am a beginner in this web d field.</div>
+                <div>and I am a beginner in this</div>
+                
+                <span id="element"></span>
+
             </div>
             <div class="rightsec">
                 <img src="https://images.unsplash.com/photo-1603575448360-153f093fd0b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
             </div>
         </section>
     </main>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['web developing field', 'marketing field','graphic designing field'],
+          typeSpeed: 50,
+        });
+      </script>
 </body>
 </html>
